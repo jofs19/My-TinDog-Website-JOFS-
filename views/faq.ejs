@@ -1,0 +1,182 @@
+<%- include('partials/home-header.ejs') %>
+
+<style>
+    #footer {
+        background-color: #ff4c68;
+        margin-top: 3em;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer p {
+        color: white;
+
+    }
+
+    h1 {
+        background: -webkit-linear-gradient(120grad, #ff4c68, #ef8172);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    /*--------------------------------------------------------------
+        # Frequently Asked Questions
+        --------------------------------------------------------------*/
+    .faq .faq-list {
+        padding: 2em;
+        list-style: circle;
+
+    }
+
+    .faq .faq-list li {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .faq .faq-list a {
+        display: block;
+        position: relative;
+        font-family: #7cc576;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+        padding-right: 25px;
+    }
+
+    .faq .faq-list i {
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .faq .faq-list p {
+        margin-bottom: 0;
+        padding: 10px 0 0 0;
+    }
+
+
+    .faq .faq-list a.collapsed {
+        color: #ef8172;
+    }
+
+    .faq .faq-list a.collapsed:hover {
+        color: #ff4c68;
+    }
+</style>
+</head>
+
+</div>
+</section>
+
+
+
+<section class="faq mt-5">
+    <div class="container">
+
+        <div class="section-title" id="FAQ">
+            <br>
+            <h3 class="image">Frequently Asked Questions</h3>
+        </div>
+
+        <ul class="faq-list">
+
+            <li class="text">
+                <a data-bs-toggle="collapse" class="collapsed" href="#faq1">What if I don't get a rebate confirmation
+                    email?</a>
+                <div id="faq1" class="collapse" data-parent=".faq-list">
+                    <p>
+                        If you completed the entire application process but didn’t get a confirmation email from us,
+                        please check your spam, junk or clutter folders.
+
+                    </p>
+                </div>
+            </li>
+
+            <li class="text">
+                <a data-bs-toggle="collapse" href="#faq2" class="collapsed">What does it mean when a dog
+                    has webbed feet?</a>
+                <div id="faq2" class="collapse" data-parent=".faq-list">
+                    <p>
+                        If your dog has webbed feet, the membranes between its toes are still intact. Webbed feet are
+                        the result of mutations in the genes that would normally cause this tissue to die before birth,
+                        separating the digits from each other. In some cases, a dog might not undergo this process
+                        before it is born, giving rise to a dog with webbed feet.
+                    </p>
+                </div>
+            </li>
+
+            <li class="text">
+                <a data-bs-toggle="collapse" href="#faq3" class="collapsed">How often should I feed my dog?</a>
+                <div id="faq3" class="collapse" data-parent=".faq-list">
+                    <p>
+                        A practical guideline is that puppies should be fed three times a day from weaning (3 to 6
+                        weeks) to 4 months of age. After 4 months, they should be fed twice a day. Most dogs should
+                        continue to be fed twice a day throughout their life, although some pets do well with one
+                        feeding.
+                    </p>
+                </div>
+            </li>
+
+            <li class="text">
+                <a data-bs-toggle="collapse" href="#faq4" class="collapsed">What should I do if my dog is constipated or
+                    has loose stools?</a>
+                <div id="faq4" class="collapse" data-parent=".faq-list">
+                    <p>
+                        Keep in mind that the pet's stool should be small and firm. Most cases of constipation are
+                        temporary and due to dietary interruptions. Loose stools also are often temporary and can be due
+                        to dietary interruptions, as well as many other things, including an abrupt change in diet,
+                        overeating, parasites, medication, eating table scraps, viral or bacterial infections, and
+                        stress. If constipation or diarrhea persists, however, it is important to consult a
+                        veterinarian.
+                    </p>
+                </div>
+            </li>
+
+            <li class="text">
+                <a data-bs-toggle="collapse" href="#faq5" class="collapsed">How much should I give my dog to eat?</a>
+                <div id="faq5" class="collapse" data-parent=".faq-list">
+                    <p>
+                        The amount to feed depends on the age, size, and activity level of the dog. Feeding guidelines,
+                        which list the daily recommended portion, are included on all of our packages. Start feeding
+                        with this amount and adjust according to your pet's needs. Remember to divide the portion
+                        accordingly if you feed more than once a day.
+                    </p>
+                </div>
+            </li>
+
+            <li class="text">
+                <a data-bs-toggle="collapse" href="#faq6" class="collapsed">Will it hurt my dog if I they eat my cat's
+                    food?</a>
+                <div id="faq6" class="collapse" data-parent=".faq-list">
+                    <p>
+                        Cats and dogs have different nutritional requirements and really should not eat each other's
+                        food. For example, cats require a much higher level of taurine in their diet. An occasional
+                        venture into each other's bowls will not be harmful, but is not recommended on a regular basis.
+                    </p>
+                </div>
+            </li>
+
+        </ul>
+
+
+
+    </div>
+</section><!-- End Frequently Asked Questions Section -->
+
+<div class="p-3 bg-light rounded-3 text-center">
+    <div class="container-fluid ">
+        <h1 class="display-6 fw-bold">FAQ</h1>
+        <p class="col-12 fs-5">Do you have any questions about <b>TinDog</b>? Find your answers here. If you don't find
+            what you're looking for, <a href="https://www.gmail.com">contact us</a>.</p>
+    </div>
+</div>
+
+<%- include('partials/home-footer.ejs') %>

@@ -1,0 +1,100 @@
+<%- include('partials/home-header.ejs') %>
+
+<head>
+    <style>
+        .navbar {
+            padding: 0;
+        }
+
+        #footer {
+            background-color: #ff4c68;
+            margin-top: 3em;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer p {
+            color: white;
+
+        }
+
+        .container {
+            padding-top: 5%;
+            padding-bottom: 10%;
+
+        }
+
+        h3 {
+            color: #ff4c68;
+
+        }
+
+        h5 {
+            color: #ef8172;
+        }
+
+
+    </style>
+</head>
+
+</div>
+</section>
+
+<div class="container">
+    <h3 class="display-6 fw-bold">User Reviews</h3>
+    <p> <%= startingContent %> </p>
+    <br>
+
+
+    <!--DATE POSTED-->
+
+    <!--INSERTED-->
+    <div class="list-group px-3">
+
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+            <div class="d-flex w-100 justify-content-between px-3 pt-2">
+                <h5 class="mb-1">Recommened for dog breeders!!!</h5>
+                <small class="text-muted"><i class="fa-solid fa-ellipsis fa-beat"></i></small>
+            </div>
+            <p class="mb-1 p-3">Without TinDog, it is extremely difficult to find love for a dog because there is so
+                little information available about where to look for... But with TinDog's help, it became easier! 😍
+            </p>
+            <small class="text-muted px-2">-John Oliver Santiago</small>
+        </a>
+        <%  posts.forEach(function(post){ %>
+
+        <a href="/posts/<%=post._id%>" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between px-3 pt-2">
+                <h5 class="mb-1"> <%=post.title%> </h5>
+                <small> 
+                    
+                    <i class="fa-solid fa-ellipsis fa-beat"></i></small>
+
+                </small>
+            </div>
+
+            <p class="mb-1 p-3"> <%=post.content%> </p>
+
+            <small class="text-muted px-2">-<%=post.name%></small>
+            <% }) %>
+
+        </a>
+    </div>
+    <!--INSERTED-->
+    <center>
+        <div class="px-3">
+            <a href="/compose">
+                <button class="btn btn-lg btn-outline-dark" type="button">
+                    <i class="fa-solid fa-pen-to-square fa-fade"></i></i></i> Write a review
+                </button>
+            </a>
+        </div>
+    </center>
+</div>
+
+
+
+
+<%- include('partials/home-footer.ejs') %>

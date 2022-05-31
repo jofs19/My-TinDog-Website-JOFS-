@@ -1,0 +1,85 @@
+<!-- JQUERY CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<!-- JAVASCRIPT JQUERY IMPLEMENTATION -->
+<script>
+  $('.fName').on("change keyup paste",
+    function () {
+      if ($(this).val()) {
+        $('.icon-paper-plane').addClass("next");
+      } else {
+        $('.icon-paper-plane').removeClass("next");
+      }
+    }
+  );
+
+  $('.next-button').hover(
+    function () {
+      $(this).css('cursor', 'pointer');
+    }
+  );
+
+  $('.next-button.fName').click(
+    function () {
+      console.log("Something");
+      $('.fName-section').addClass("fold-up");
+      $('.lName-section').removeClass("folded");
+    }
+  );
+
+  $('.lName').on("change keyup paste",
+    function () {
+      if ($(this).val()) {
+        $('.icon-lock').addClass("next");
+      } else {
+        $('.icon-lock').removeClass("next");
+      }
+    }
+  );
+
+  $('.next-button').hover(
+    function () {
+      $(this).css('cursor', 'pointer');
+    }
+  );
+
+  $('.next-button.lName').click(
+    function () {
+      console.log("Something");
+      $('.lName-section').addClass("fold-up"); //REPEAT PASSWORD
+      $('.emailAdd-section').removeClass("folded");
+    }
+  );
+
+  $('.emailAdd').on("change keyup paste",
+    function () {
+      if ($(this).val()) {
+        $('.icon-repeat-lock').addClass("next");
+      } else {
+        $('.icon-repeat-lock').removeClass("next");
+      }
+    }
+  );
+
+  $('.next-button.emailAdd').click(
+    function () {
+      console.log("Something");
+      $('.emailAdd-section').addClass("fold-up");
+      $('.success').css("marginTop", 0);
+    }
+  );
+
+  $('.end-button').click(
+    function () {
+      console.log("Something");
+      $('.unload').addClass("load");
+
+    }
+  );
+</script>
+
+
+</body>
+
+</html>

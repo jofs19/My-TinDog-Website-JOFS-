@@ -1,0 +1,292 @@
+<%- include('partials/home-header.ejs') %>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand fs-1" href="#">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .menu li {
+      display: inline;
+    }
+
+    .bc {
+      padding-top: 5px;
+    }
+
+    .modal-tour .modal-dialog {
+      width: 380px;
+    }
+  </style>
+</head>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb menu image">
+    <li class="breadcrumb-item">Home</li>
+    <li class="breadcrumb-item"><a href="#features">Features</a></li>
+    <li class="breadcrumb-item"><a href="#testimonials">Testimonials</a></li>
+    <li class="breadcrumb-item"><a href="#pricing">Pricing</a></li>
+    <li class="breadcrumb-item"><a href="#cta">CTA</a></li>
+
+  </ol>
+</nav>
+<!--BROWSE GALLERY-->
+<div class="row tm">
+  <div class="col-lg-6">
+    <h3 class="image">Hi, <%=user%>!</h3>
+    <h1 class="text-light text">Let's meet new and interesting dogs nearby!</h1>
+    <br>
+    <form action="/sign-up" method="POST">
+      <button class="btn btn-lg btn-outline-light text" type="submit">
+        <i class="fa-solid fa-paper-plane fa-shake subscribe"></i></i> Subscribe to our Newsletter!
+      </button>
+    </form>
+  </div>
+
+  <div class="col-lg-6">
+    <img class="title-img image" src="/iphone6.png" alt="iphone-mockup" />
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Features -->
+
+<section id="features">
+  <div class="container-fluid ft image">
+    <div class="row">
+      <div class="col-lg-4 ">
+        <i class="fa-beat fa-solid fa-circle-check fa-5x icf"></i>
+        <h3>User-friendly</h3>
+        <p class="tf">So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="col-lg-4 ">
+        <i class="fa-flip fa-solid fa-award fa-5x icf"></i>
+        <h3>Elite Clientele</h3>
+        <p class="tf">We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4 ">
+        <i class="fa-fade fa-solid fa-heart-circle-bolt fa-5x icf"></i>
+        <h3>Guaranteed to work</h3>
+        <p class="tf">
+          Find the love of your dog's life with one swipe!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+
+<section id="testimonials">
+  <div id="test-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <h2 class="testimonial-text image">
+          I no longer have to sniff other dogs for love. I've found the
+          hottest Corgi on TinDog. Woof.
+        </h2>
+        <img class="test-img" src="/cloud.png" alt="dog-profile" />
+        <em>Cloud, Philippines</em>
+      </div>
+      <div class="carousel-item active">
+        <h2 class="testimonial-text image">
+          My dog used to be so lonely, but with TinDog's help, they've found
+          the love of their life. I think.
+        </h2>
+        <img class="test-img" src="/JOFS.jpg" alt="lady-profile" />
+        <em>John Oliver, Philippines</em>
+      </div>
+      <div class="carousel-item">
+        <h2 class="testimonial-text image">
+          What a great experience at TinDog! Finally made my dog happy with his new buddy!
+        </h2>
+        <img class="test-img" src="/rems.png" alt="lady-profile" />
+        <em>Christian Dominic, Philippines</em>
+      </div>
+      <div class="carousel-item">
+        <h2 class="testimonial-text image">
+          Thank you so much TinDog! It made my dog so much happy! Keep up the great work ;)
+        </h2>
+        <img class="test-img" src="/doms.png" alt="lady-profile" />
+        <em>Remdell Ardie, Philippines</em>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#test-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#test-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Press -->
+
+<section id="press">
+  <img class="press-img " src="/TechCrunch.png" alt="tc-logo" />
+  <img class="press-img " src="/tnw.png" alt="tnw-logo" />
+  <img class="press-img " src="/bizinsider.png" alt="biz-insider-logo" />
+  <img class="press-img " src="/mashable.png" alt="mashable-logo" />
+</section>
+
+<!-- Pricing -->
+
+<section id="pricing">
+  <div class="pricing-header">
+    <h2 class="image">A Plan for Every Dog's Needs</h2>
+    <p class="text">Simple and affordable price plans for you and your dog.</p>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-4 col-md-6 citem ">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Chihuahua</h3>
+        </div>
+
+        <div class="card-body image">
+          <h2 id="cheader" class="fs-1">Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Limited App Usage</p>
+          <button class="btn btn-lg btn-outline-primary price-button w-100" type="button">Current Plan</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 citem ">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Labrador</h3>
+        </div>
+
+        <div class="card-body image">
+          <h2 id="cheader" class="fs-2">₱ 499.00/ month</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Elite Limited Access</p>
+          <a href="/pricing">
+            <button type="button" class="btn btn-lg price-button btn-primary  w-100">Subscribe</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 citem ">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Mastiff</h3>
+        </div>
+
+        <div class="card-body image">
+          <h2 id="cheader" class="fs-2">₱ 899.00/ month</h2>
+          <p>Priority Listing</p>
+          <p>Unlimited App Usage</p>
+          <p>Elite Access</p>
+          <a href="/pricing">
+            <button type="button" class="btn btn-lg  price-button btn-primary  w-100">Subscribe</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--Card group-->
+
+
+</section>
+
+<!-- Call to Action -->
+
+<section id="cta">
+  <h3 class="foot-text image">Find the True Love of Your Dog's Life Today.</h3>
+  <button type="button" class="btn btn-lg btn-dark ms-3" id="MybtnModal1"> <i
+      class="fa-brands fa-google-play fa-beat me-sm-2"> </i> Download</button>
+  <button type="button" class="btn btn-lg btn-outline-light" id="MybtnModal2"> <i
+      class="fa-brands fa-apple fa-beat me-sm-2"></i> Download</button>
+
+  <center>
+    <a href="#title">
+      <button class="btn btn-lg btn-outline-light ms-3 mb-2" type="button">
+        <i class="fa-solid fa-arrow-up fa-fade subscribe"></i></i> Navigate to Top
+      </button>
+    </a>
+  </center>
+
+  <!--MODAL-->
+  <div class="modal modal fade modal-alert py-5" tabindex="-1" role="dialog" id="Mymodal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-body p-4 text-center">
+          <h5 class="mb-3">Download the App?</h5>
+          <p class="mb-0">You can always change your mind.</p>
+        </div>
+        <div class="modal-footer flex-nowrap p-0">
+
+          <button type="button"
+            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right p-3 close"><strong>Yes,
+              download</strong></button>
+          <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 p-3"
+            data-bs-dismiss="modal">No thanks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MODAL-->
+  <!-- MODAL 2-->
+  <!-- <div class="modal fade" id="Mymodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button> 
+            <h4 class="modal-title">Notification</h4>                                                             
+          </div> 
+          <div class="modal-body">
+            Are you sure you want to continue?
+          </div>   
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                               
+          </div>
+        </div>                                                                       
+      </div>                                          
+    </div> -->
+  <!--MODAL 2 -->
+
+</section>
+
+
+
+<script>
+  var a = document.querySelectorAll(".menu a");
+  for (var i = 0, length = a.length; i < length; i++) {
+    a[i].onclick = function () {
+      var b = document.querySelector(".menu li.bc");
+      if (b) b.classList.remove("bc");
+      this.parentNode.classList.add('bc');
+    };
+  }
+</script>
+
+
+
+<%- include('partials/home-footer.ejs') %>

@@ -1,0 +1,271 @@
+<%- include('partials/home-header.ejs') %>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand fs-1" href="#">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+
+<!--CSS Override-->
+</div>
+</section>
+
+<head>
+
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+
+    h1 {
+      background: -webkit-linear-gradient(120grad, #ff4c68, #ef8172);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sect {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 3rem 3rem;
+      /* background: linear-gradient(120grad, #ff4c68, #ef8172); */
+    }
+
+    .navbar {
+      padding: 0;
+    }
+
+    section:nth-of-type(odd) {
+      flex-direction: row-reverse;
+    }
+
+    section>* {
+      flex: 1 1 300px;
+    }
+
+    .description p {
+      text-align: center;
+    }
+
+
+    img:not(.greensock-icon) {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 800px) {
+      body {
+        font-size: 0.7rem
+      }
+    }
+
+
+    #footer {
+      background-color: #ff4c68;
+      margin-top: 3em;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    footer p {
+      color: white;
+
+    }
+
+
+    .card-padding {
+      padding: 2%;
+
+    }
+
+    section p {
+      font-weight: 500;
+      font-size: medium;
+    }
+
+
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .carousel-item,
+    .img-fluid {
+
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+
+
+
+<main id="start">
+
+  <section class="pt-5 text-center">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-bold display-4 image">TinDog's Album</h1>
+        <p class="lead text-muted text mb-4">A dog’s companionship, loyalty and love naturally melts away a stressful
+          day. Every day turns into a doggie photo-shoot and an opportunity to capture their funniest traits. The best
+          way to put all these pictures to good use is with a dog photo album.</p>
+        <!-- <p>
+          <form action="/gallery" method="POST">
+            <button class="btn btn-lg btn-outline-dark text" type="submit">
+              <i class="fa-solid fa-paper-plane fa-shake subscribe "></i></i> Generate Random Dog Name!
+            </button>
+          </form>
+        </p> -->
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--CAROUSEL SECTION-->
+  <section id="abt-carousel">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade bg-light" data-bs-ride="carousel"
+      data-bs-interval="1000" data-bs-pause="false">
+      <div class="carousel-inner img-fluid">
+        <div class="carousel-item active">
+          <img src="/love-dog-1.jpg" class="d-block w-100 rounded" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/love-dog-2.jpg" class="d-block w-100 rounded" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/love-dog-3.jpg" class="d-block w-100 rounded" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon "></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+</main>
+
+
+<!--Pictures-->
+<div class="description panel purple container">
+
+  <section class="sect">
+    <img src="https://th.bing.com/th/id/OIP.WdECtAn0ndlJyYt20erG8gHaE7?pid=ImgDet&rs=1" alt=""
+      class="image border border-5 border-dark rounded-pill img1">
+    <p class="lead text-muted text">“The dog is the perfect portrait subject. He doesn’t pose. He isn’t aware of the
+      camera.” <br><b>– Patrick Demarchelier</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/3_Lovely_Dogs_Image.jpg" alt=""
+      class="image border border-5 border-dark rounded-pill img2">
+    <p class="lead text-muted text">“You know, a dog can snap you out of any kind of bad mood that you’re in faster than
+      you can think of.” <br><b>– Jill Abramson</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img src="https://gamma.creativecirclecdn.com/liherald/original/20220220-190335-20220218-120042-1039494896_wide.jpg"
+      alt="" class="image border border-5 border-dark rounded-pill img3">
+    <p class="lead text-muted text">“The love of a dog is a pure thing. He gives you a trust which is total. You must
+      not betray it.” <br><b>– Michel Houellebecq</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img src="https://images2.alphacoders.com/115/1159138.jpg" alt=""
+      class="image border border-5 border-dark rounded-pill img4">
+    <p class="lead text-muted text">“My favorite type of pet has always been a dog. They’re loyal, kind, and offer
+      endless affection. My friend Eric says, ‘The more people I meet, the more I like my dog.’ Funny thought.” <br><b>–
+        Brendon Urie</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img
+      src="https://www.bluecrossanimalhospital.ca/wp-content/uploads/2015/04/Portrait-of-two-young-dogs-preventive-2.jpg"
+      alt="" class="image border border-5 border-dark rounded-pill img5">
+    <p class="lead text-muted text">“You can tell by the kindness of a dog how a human should be.” <br><b>– Captain
+        Beefheart</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img
+      src="https://th.bing.com/th/id/R.5c488e8420b87ce3efdbe9235e0ece0e?rik=HPWWRkSug%2f%2fJzQ&riu=http%3a%2f%2fs1.1zoom.me%2fb5150%2f935%2fDogs_Love_Roses_Two_523164_1920x1080.jpg&ehk=OpHumLH0zVPYNzzBBuaOe%2bXOxDTVRWhrqPGZyDmOjiM%3d&risl=&pid=ImgRaw&r=0"
+      alt="" class="image border border-5 border-dark rounded-pill img6">
+    <p class="lead text-muted text">“Such short little lives our pets have to spend with us, and they spend most of it
+      waiting for us to come home each day.” <br><b>– John Grogan</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/2_Lovely_Dog_Puppy.jpg" alt=""
+      class="image border border-5 border-dark rounded-pill img7">
+    <p class="lead text-muted text">“When the dog looks at you, the dog is not thinking what kind of a person you are.
+      The dog is not judging you.” <b>– Eckhart Tolle</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img src="https://images8.alphacoders.com/748/748102.jpg" alt=""
+      class="image border border-5 border-dark rounded-pill img8">
+    <p class="lead text-muted text">“There’s a saying. If you want someone to love you forever, buy a dog, feed it and
+      keep it around.” <br><b>– Dick Dale</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Cute_Dog_Puppy_Image.jpg" alt=""
+      class="image border border-5 border-dark rounded-pill img9">
+    <p class="lead text-muted text">“A dog is the only thing on earth that loves you more than you love yourself.”
+      <br><b>– Josh Billings</b></p>
+    <p>
+  </section>
+  <section class="sect">
+    <img src="https://wallpapercave.com/wp/wp5003593.jpg" alt=""
+      class="image border border-5 border-dark rounded-pill img10">
+    <p class="lead text-muted text">“If you don’t own a dog, at least one, there is not necessarily anything wrong with
+      you, but there may be something wrong with your life.” <br><b>– Roger A. Caras</b></p>
+    <p>
+  </section>
+</div>
+
+
+
+<center>
+  <a href="#start">
+    <button class="btn btn-lg btn-outline-dark  ms-3" type="button">
+      <i class="fa-solid fa-arrow-up fa-fade subscribe"></i></i> Navigate to Top
+    </button>
+  </a>
+</center>
+
+<%- include('partials/home-footer.ejs') %>

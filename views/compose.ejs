@@ -1,0 +1,73 @@
+
+<%- include('partials/home-header.ejs') %>
+
+<head>
+  <style>
+      .navbar {
+          padding: 0;
+      }
+
+      #footer {
+          background-color: #ff4c68;
+          margin-top: 3em;
+      }
+
+      footer a {
+          color: white;
+      }
+
+      footer p {
+          color: white;
+
+      }
+      
+      .container {
+          padding-top: 5%;
+          padding-bottom: 10%;
+
+      }
+
+      h3 {
+            color: #ff4c68;
+
+        }
+
+  </style>
+</head>
+
+</div>
+</section>
+
+<form class="container-fluid" action="/compose" method="post">
+  <h3 class="display-6 fw-bold pb-3">Tell us what you feel!</h3>
+
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text " id="inputGroup-sizing-default">Name</span>
+      </div>
+      <input type="text" class="form-control" name="nameOfUser" minlength="2" maxlength="50" placeholder="<%=user%>" value= "<%=user%>" required>
+    </div>
+
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+      </div>
+      <input type="text" class="form-control" name="postTitle" minlength="5" maxlength="50" required>
+    </div>
+    <label>Write your review:</label>
+    <textarea class="form-control" name="postBody" rows="5" cols="30" minlength="20" maxlength="500" required></textarea>
+  </div>
+
+  <div class="text-end">
+    <a href="/compose">
+        <button class="btn btn-lg btn-outline-dark" type="submit" name="button">
+          <i class="fa-solid fa-share fa-fade"></i> Publish
+        </button>
+    </a>
+</div>
+
+</form>
+
+<%- include('partials/home-footer.ejs') %>

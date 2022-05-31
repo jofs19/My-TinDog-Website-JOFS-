@@ -1,0 +1,99 @@
+<%- include('partials/home-header.ejs') %>
+
+<head>
+
+    <style>
+        .navbar {
+            padding: 0;
+        }
+
+        #footer {
+            background-color: #ff4c68;
+            margin-top: 3em;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer p {
+            color: white;
+
+        }
+
+        .container {
+            padding-top: 5%;
+            padding-bottom: 10%;
+
+        }
+
+        h2 {
+            color: #ff4c68;
+
+        }
+
+        .container {
+
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 15%;
+
+        }
+
+        .hover-3 {
+            --h: 1.2em;
+
+            line-height: var(--h);
+            color: #0000;
+            text-shadow:
+                0 calc(-1*var(--_t, 0em)) #000,
+                0 calc(var(--h) - var(--_t, 0em)) #ff4c68;
+            overflow: hidden;
+            transition: .3s;
+        }
+
+        .hover-3:hover {
+            --_t: var(--h);
+        }
+
+        .alt3 {
+            --c: #ef8172;
+            /* the color  */
+            --h: 1.2em;
+            /* the height */
+
+            line-height: var(--h);
+            color: #0000;
+            overflow: hidden;
+            text-shadow:
+                0 calc(-1*var(--h)*var(--_i, 0)) var(--c),
+                0 calc(var(--h)*(1 - var(--_i, 0))) #fff;
+            background:
+                linear-gradient(var(--c) 0 0) no-repeat calc(200% - var(--_i, 0) * 100%) 100% / 200% calc(100% * var(--_i, 0) + .08em);
+            transition: .3s calc(var(--_i, 0) * .3s), background-position .3s calc(.3s - calc(var(--_i, 0) * .3s));
+        }
+
+        .hover-3:hover {
+            --_i: 1;
+        }
+    </style>
+
+</head>
+
+</div>
+</section>
+
+
+<div class="container text-center">
+    <h2 class="hover-3 "><%=title%></h2><br>
+    <h4 class=" hover-3 alt3 p-3"><sup><i class="fa-solid fa-quote-left fa-beat"></i></sup>&nbsp;<%=content%>&nbsp;<sup><i class="fa-solid fa-quote-right fa-beat"></i></sup></h3>
+        <i>
+            <p class="text-muted">-<%=name%></p>
+        </i>
+
+
+</div>
+
+
+
+<%- include('partials/home-footer.ejs') %>

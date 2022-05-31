@@ -1,0 +1,162 @@
+<%- include('partials/home-header.ejs') %>
+
+<head>
+
+    <style>
+        .container {
+            padding-top: 3%;
+            padding-bottom: 1%;
+
+        }
+
+        .result-container {
+            padding-left: 3%;
+            padding-right: 5%;
+            padding-top: 3%;
+            padding-bottom: 4%;
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        h3 {
+            color: #ff4c68;
+
+        }
+
+        h3:hover {
+            color: white;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .link {
+            color: blue;
+        }
+
+
+        #footer {
+            background-color: #ff4c68;
+            margin-top: 3em;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer p {
+            color: white;
+
+        }
+
+        .form-control-borderless {
+            border: solid;
+            border-color: black;
+        }
+
+        .form-control-borderless:hover,
+        .form-control-borderless:active,
+        .form-control-borderless:focus {
+            border: solid;
+            border-color: black;
+            outline: black;
+            box-shadow: none;
+        }
+
+        .found {
+            background: -webkit-linear-gradient(120grad, #ff4c68, #ef8172);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+    </style>
+
+</head>
+<!--CSS Override-->
+</div>
+</section>
+<div class="container p-3">
+    <form action="/result" method="post">
+
+        <div class="container" id="search-section">
+            <br />
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <form class="card card-sm">
+                        <div class="card-body row no-gutters align-items-center image">
+                            <div class="col-auto">
+                                <i class="fas fa-search h4 text-body"></i>
+                            </div>
+                            <!--end of col-->
+                            <div class="col">
+                                <input class="form-control form-control-lg form-control-borderless" type="search"
+                                    placeholder="Search topics or keywords" name="search">
+                            </div>
+                            <!--end of col-->
+                            <div class="col-auto">
+                                <button class="btn btn-lg btn-success" type="submit">Search</button>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                    </form>
+                </div>
+                <!--end of col-->
+            </div>
+        </div>
+
+    </form>
+
+
+    <div class="result-container">
+        <i> <b>
+                <p class="found">About '<%= searched.length %>' result(s) found...</p>
+            </b></i>
+
+        <% searched.forEach(function(i){ %>
+
+        <ul class="text pt-5">
+            <a href="<%=i.webLink%>">
+                <h3 class="display-6 hover-1 alt pb-2 fw-bold"> <%=i.webTitle;%> </h3>
+            </a>
+            <pre><u>text score: <%=i._doc.score.toFixed(3) %></u></pre>
+
+            <a href="<%=i.webLink%>">
+                <p class="link "><%=i.webLink%></p>
+            </a>
+            <% if((i.webDescription.length) <= 230){ %>
+            <p> <%=i.webDescription%></p>
+            <%  } else {%>
+            <p> <%=i.webDescription.substring(0, 230) + " ..."%><a href="<%=i.webLink%>">Read more</a></p>
+            <% } %>
+            <hr>
+
+        </ul>
+        <%}); %>
+
+        <% if(searched.length === 0){ %>
+
+        <h2 class="text-center text-muted display-4 p-5 find">No results found. Please try again!</h2>
+
+        <%  } %>
+
+
+        <% if(searched.length >= 5){ %>
+
+            <center>
+                <a href="#search-section">
+                  <button class="btn btn-lg btn-outline-dark  ms-3" type="button">
+                    <i class="fa-solid fa-arrow-up fa-fade subscribe"></i></i> Navigate to Top
+                  </button>
+                </a>
+            </center>
+
+       <% } %>
+ 
+    </div>
+</div>
+<%- include('partials/home-footer.ejs') %>

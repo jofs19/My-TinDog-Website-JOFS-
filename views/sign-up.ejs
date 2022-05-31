@@ -1,0 +1,72 @@
+<%- include('partials/su-header.ejs') %>
+
+<head>
+  <link rel="stylesheet" href="/css/loader.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+</head>
+<div id="loader"></div>
+
+
+
+<div class="unload">
+  <button class="btn btn-light" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Loading...
+  </button>
+</div>
+
+
+<!-- HEADER AREA -->
+<div class="back">
+  <div class="registration-form">
+    <header>
+      <h1>Sign Up</h1>
+      <p>Fill in all informations</p>
+    </header>
+    <form action="/" method="POST">
+
+      <!-- FIRST NAME -->
+
+      <div class="input-section fName-section"><input class="fName" type="text" placeholder="ENTER YOUR FIRST NAME HERE"
+          autocomplete="off" name="fname" />
+        <div class="animated-button"><span class="icon-paper-plane"><i
+              class="fa-solid fa-right-to-bracket"></i></span><span class="next-button fName"><i
+              class="fa fa-arrow-up"></i></span></div>
+      </div>
+
+
+      <!-- LAST NAME -->
+
+      <div class="input-section lName-section folded"><input class="lName" type="text"
+          placeholder="ENTER YOUR LAST NAME HERE" name="lname" />
+        <div class="animated-button"><span class="icon-lock"><i
+              class="fa-solid fa-right-to-bracket"></i></i></span><span class="next-button lName"><i
+              class="fa fa-arrow-up"></i></span></div>
+      </div>
+
+
+      <!-- EMAIL ADDRESS -->
+      <div class="input-section emailAdd-section folded"><input class="emailAdd" type="email"
+          placeholder="ENTER YOUR EMAIL HERE" name="email" />
+        <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-envelope-o"></i></i></span><span
+            class="next-button emailAdd"><i class="fa fa-paper-plane"></i></span></div>
+      </div>
+      <div class="success end-button">
+        <button class="w-100 btn btn-lg " type="submit">Sign up</button>
+      </div>
+
+
+    </form>
+
+  </div>
+
+</div>
+
+
+
+
+<%- include('partials/su-footer.ejs') %>

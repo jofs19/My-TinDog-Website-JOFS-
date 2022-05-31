@@ -1,0 +1,32 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "Creating News Letter Sign-Up",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Oliver Santiago",
+  "license": "ISC",
+  "engines": {
+    "node": "14.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bootstrap-icons": "^1.8.1",
+    "dog-names": "^2.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "lodash.throttle": "^4.1.1",
+    "moment": "^2.29.3",
+    "mongodb": "4.5",
+    "mongoose": "^6.3.2",
+    "mongoose-searchable": "^1.0.0",
+    "multer": "^1.4.4",
+    "party-js": "^2.1.2",
+    "react-heart": "^1.0.6",
+    "request": "^2.88.2"
+  }
+}

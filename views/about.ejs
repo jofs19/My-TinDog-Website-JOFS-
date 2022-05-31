@@ -1,0 +1,319 @@
+<%- include('partials/home-header.ejs') %>
+
+<head>
+    <style>
+        .navbar {
+            padding: 0;
+        }
+
+        #footer {
+            background-color: #ff4c68;
+            margin-top: 3em;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer p {
+            color: white;
+
+        }
+
+        .blog-header {
+            /* background: linear-gradient(120grad, #ff4c68, #ef8172); */
+        }
+
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .card .images {
+            display: grid;
+            gap: 1rem;
+            grid-template: "top top" "b-l b-r";
+        }
+
+        .card .images img:nth-child(1) {
+            grid-area: top;
+        }
+
+        .card .images img:nth-child(2) {
+            grid-area: b-l;
+        }
+
+        .card .images img:nth-child(3) {
+            grid-area: b-r;
+        }
+
+        .card .images.state-2 img:nth-child(1) {
+            grid-area: b-r;
+        }
+
+        .card .images.state-2 img:nth-child(2) {
+            grid-area: top;
+        }
+
+        .card .images.state-2 img:nth-child(3) {
+            grid-area: b-l;
+        }
+
+        .card .images.state-3 img:nth-child(1) {
+            grid-area: b-l;
+        }
+
+        .card .images.state-3 img:nth-child(2) {
+            grid-area: b-r;
+        }
+
+        .card .images.state-3 img:nth-child(3) {
+            grid-area: top;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            background: -webkit-linear-gradient(120grad, #ff4c68, #ef8172);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .f1,
+        .f2 {
+            color: #ef8172;
+        }
+    </style>
+</head>
+
+</div>
+</section>
+
+<main class="container">
+    <section class="py-5 text-center">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 mx-auto">
+                <h1 class="fw-bold display-4 image">About Us</h1>
+                <p class="lead text-muted text">Here at Tindog we want to provide you with the best online information
+                    resources for dogs! We love our pups and we understand how important it is for you to keep your dog
+                    safe, happy, and healthy!
+
+            </div>
+        </div>
+    </section>
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 f1">Featured post #1</strong>
+                    <h3 class="mb-0">Learn about dog breeds!</h3>
+                    <div class="mb-1 text-muted">May 1, 2022</div>
+                    <p class="card-text mb-auto">Browse dog breeds and learn about the many dogs available for adoption
+                        on Petfinder.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 f2">Featured post #2</strong>
+                    <h3 class="mb-0">Dog Adoption Checklist</h3>
+                    <div class="mb-1 text-muted">May 4, 2022</div>
+                    <p class="mb-auto">Congratulations on deciding to adopt a dog! Use our checklist to make it as easy
+                        as possible.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 border-bottom">
+                TinDog: FOR MODERN DOGS AND THEIR BEST FRIENDS!
+            </h3>
+
+            <article class="blog-post">
+                <h2 class="blog-post-title">What is TinDog?</h2>
+                <p class="blog-post-meta">May 2, 2022 by <a href="#">John Oliver Santiago</a></p>
+                <div class="row">
+                    <div class="col-12">
+                        <img src="/love-dog-1.jpg" width="848" height="500" alt="" srcset="" class="rounded">
+                    </div>
+                </div>
+                <hr>
+                <p>Perhaps you think I started this website simply because I am passionate about dogs and dog breeding.
+                    Well, it’s totally true! I love how each dog is a story in itself, and each breeder is an artist (or
+                    scientist, or both). But more importantly, I created TinDog because I care about dog breeders
+                    immensely.<br><br>
+
+                    Dog breeders are some of the most painstaking, conscientious and generous people I came across.
+                    Regrettably, most breeders burn out and break down because their passion for breeding and raising
+                    healthy dogs is completely separate from the actual business side of running a kennel. To add insult
+                    to injury, there is no leading resource to help breeders solve their business problems. Until now…
+                </p>
+                <h2 class="mt-4">Why TinDog?</h2>
+                <p>From large and quiet and rambunctious - dogs come in every shape, size, and temperament. So get ready
+                    to make the process of finding a new four-legged friend easier!</p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <!--INSERTED-->
+                        <div class="card">
+                            <div class="images">
+                                <img src="https://th.bing.com/th/id/OIP.WdECtAn0ndlJyYt20erG8gHaE7?pid=ImgDet&rs=1"
+                                    alt="actual image is irrelevant">
+                                <img src="https://www.bluecrossanimalhospital.ca/wp-content/uploads/2015/04/Portrait-of-two-young-dogs-preventive-2.jpg"
+                                    alt="actual image is irrelevant">
+                                <img src="https://th.bing.com/th/id/R.5c488e8420b87ce3efdbe9235e0ece0e?rik=HPWWRkSug%2f%2fJzQ&riu=http%3a%2f%2fs1.1zoom.me%2fb5150%2f935%2fDogs_Love_Roses_Two_523164_1920x1080.jpg&ehk=OpHumLH0zVPYNzzBBuaOe%2bXOxDTVRWhrqPGZyDmOjiM%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="actual image is irrelevant">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <!--INSERTED-->
+                        <div class="card">
+                            <div class="images">
+                                <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/Cute_Dog_Puppy_Image.jpg">
+                                <img src="https://www.hdnicewallpapers.com/Walls/Big/Dog/3_Lovely_Dogs_Image.jpg"
+                                    alt="actual image is irrelevant">
+                                <img src="https://gamma.creativecirclecdn.com/liherald/original/20220220-190335-20220218-120042-1039494896_wide.jpg"
+                                    alt="actual image is irrelevant">
+                            </div>
+                        </div>
+                    </div>
+                    <!--INSERTED-->
+
+                </div>
+
+
+
+
+                <h2 class="mt-3">About this App</h2>
+                <p>TinDog is a platform dedicated to ethical dog breeding around the world. Our team provides quality
+                    posts, in-depth articles, interviews, product reviews, and more.
+
+                    We participate in the Amazon Services LLC Associates Program, an advertising and affiliate program
+                    providing a way for our company to earn fees by linking to Amazon.com and affiliated sites.
+
+                    Product availability and prices for Amazon Products displayed on this page are updated every half an
+                    hour and are subject to change. Price and availability information shown on Amazon at the moment of
+                    purchase will apply.
+
+                </p>
+
+                <h3 class="blog-post-title">We are so grateful that you’re here.</h3>
+
+                <p>It’s important to remain in close contact with the breeder in which you will be conducting your
+                    breeding affairs. The point here is to make worthwhile, and profitable, connections. However, do not
+                    rush the process. This needs to be taken in gradual steps. Get to know the breeder over time and let
+                    the process naturally progress. This will also give you time to assess things with clarity. After
+                    enough trust has been reasonably established over some time and both breeders have gotten to know
+                    each other, as well as both the mating dogs, you can go ahead with your desired plan. The dogs, at
+                    this time, will already be familiar with one another.</p>
+
+                <h3>Join Us!</h3>
+                <p>To join our circle of passionate dog breeders and receive the best advice around, subscribe to our
+                    barking email newsletter. It’s free and furry!</p>
+            </article>
+
+            <form action="/sign-up" method="POST">
+                <button class="btn btn-lg btn-outline-dark text" type="submit">
+                    <i class="fa-solid fa-paper-plane fa-shake subscribe "></i></i> Subscribe to our Newsletter!
+                </button>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Our Mission</h4>
+                    <p class="mb-0">Our mission is to empower you as a strong tribal leader of your fan base. We’ll
+                        bring to light efficient online marketing strategies, offline community organizing tips, smart
+                        branding moves, and more that will make your breeding business reputable and worth talking
+                        about. </p>
+                </div>
+
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Our Vision</h4>
+                    <p class="mb-0">At TinDog, we believe dog breeders are incredibly altruistic to their dogs and to
+                        their community. Indeed, people from anywhere and everywhere come to breeders to find and adopt
+                        their companion of a lifetime. Breeders truly represent love and care but this time it is our
+                        turn to help breeders because they deserve it so much.</p>
+                </div>
+
+
+
+                <div class="p-4">
+                    <h4>More Articles</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="https://breedingbusiness.com/breeding/#:~:text=Dog%20Breeding%20Techniques%201%20Linebreeding%20incorporates%20and%20passes,such%20as%20Labradoodle%2C%20Cockapoo%2C%20and%20other%20designer%20breeds"
+                                target="_blank">How to breed dogs?</a></li>
+                        <li><a href="https://www.akc.org/dog-breed-selector/" target="_blank">Finding the best dog!</a>
+                        </li>
+                        <li><a href="https://breedingbusiness.com/breeding/" target="_blank">Helpful insights on what to
+                                expect</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+
+<script>
+    gsap.registerPlugin(Flip);
+
+    function doFlip(el) {
+        const imageParent = el.target.closest(".images");
+        const allImages = imageParent.querySelectorAll("img");
+        const state = Flip.getState(allImages);
+
+        // stop the parent from collapsing
+        // while the children are absolutely positioned.
+        imageParent.style.height = `${imageParent.offsetHeight}px`;
+
+        // Make DOM or styling changes
+        if (imageParent.classList.contains("state-1")) {
+            imageParent.classList.remove("state-1");
+            imageParent.classList.add("state-2");
+        } else if (imageParent.classList.contains("state-2")) {
+            imageParent.classList.remove("state-2");
+            imageParent.classList.add("state-3");
+        } else {
+            imageParent.classList.remove("state-3");
+            imageParent.classList.add("state-1");
+        }
+
+        Flip.from(state, {
+            duration: 1.2,
+            ease: "power1.inOut",
+            absolute: true, // take the images out of the document flow during flip
+            onComplete: () => {
+                imageParent.style.height = "unset"; // reset container height
+            }
+        });
+    }
+
+    const allImageZones = document.querySelectorAll(".images");
+    allImageZones.forEach((zone) => {
+        zone.addEventListener("click", doFlip);
+    });
+</script>
+
+<%- include('partials/home-footer.ejs') %>
